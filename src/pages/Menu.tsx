@@ -70,7 +70,7 @@ function Board({ sections }: { sections: readonly MenuSection[] }) {
   }, [active, reduce])
 
   return (
-    <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+    <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
       <aside className="hidden lg:col-span-5 lg:block">
         <div className="sticky top-28">
           <nav aria-label="Sezioni del menu">
@@ -116,7 +116,7 @@ function Board({ sections }: { sections: readonly MenuSection[] }) {
         </div>
       </aside>
 
-      <div className="lg:col-span-7">
+      <div className="min-w-0 lg:col-span-7">
         <div
           ref={chips}
           className="sticky top-[4.75rem] z-30 -mx-4 mb-8 flex gap-2 overflow-x-auto bg-cream/90 px-4 py-3 backdrop-blur-md [scrollbar-width:none] sm:-mx-6 sm:px-6 lg:hidden"
